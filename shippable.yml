@@ -9,3 +9,9 @@ build:
     - mkdir -p shippable/codecoverage
     # run tests
     - pytest
+  on_success:
+    # http url: https://git.heroku.com/blooming-mountain-58044.git
+    # git url: git@heroku.com:blooming-mountain-58044.git
+    # use git url not http.
+    # change to the value of your app.
+    - git push git@heroku.com:blooming-mountain-58044.git
