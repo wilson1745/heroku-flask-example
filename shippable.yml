@@ -1,6 +1,6 @@
 language: python
 python:
-  - 3.7.0
+  - 3.7
 build:
   ci:
     - shippable_retry pip install -r requirements.txt
