@@ -1,10 +1,11 @@
 language: python
 python:
   - 3.7.0
-install:
-  - pip install -r requirements.txt
 build:
   ci:
+    - shippable_retry pip install -r requirements.txt
+    #Create folders for test and code coverage
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
+    # run tests
     - pytest
