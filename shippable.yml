@@ -4,14 +4,15 @@ python:
 build:
   ci:
     - shippable_retry pip install -r requirements.txt
-    #Create folders for test and code coverage
+    # Create folders for test and code coverage
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     # run tests
     - pytest
   on_success:
+    # my heroku app git urls:
     # http url: https://git.heroku.com/blooming-mountain-58044.git
     # git url: git@heroku.com:blooming-mountain-58044.git
     # use git url not http.
-    # change to the value of your app.
+    # change this value to the value of your app.
     - git push git@heroku.com:blooming-mountain-58044.git
