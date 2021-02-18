@@ -1,6 +1,9 @@
 language: python
 python:
   - 3.7
+env:
+  global:
+    - APP_NAME=quiet-journey-76445
 build:
   ci:
     - shippable_retry pip install -r requirements.txt
@@ -15,4 +18,4 @@ build:
     # git url: git@heroku.com/quiet-journey-76445.git
     # use git url not http.
     # change this value to the value of your app.
-    - git push git@heroku.com/quiet-journey-76445.git
+    - git push -f git@heroku.com:$APP_NAME.git master
