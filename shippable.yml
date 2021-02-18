@@ -12,7 +12,7 @@ build:
   on_success:
     # my heroku app git urls:
     # http url: https://git.heroku.com/quiet-journey-76445.git
-    # git url: git.heroku.com/quiet-journey-76445.git
+    # git url: git@heroku.com/quiet-journey-76445.git
     # use git url not http.
     # change this value to the value of your app.
-    - git push git.heroku.com/quiet-journey-76445.git
+    - git push git@heroku.com/quiet-journey-76445.git
