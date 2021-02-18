@@ -19,4 +19,5 @@ build:
     # use git url not http.
     # change this value to the value of your app.
     #- git push -f git@heroku.com:$APP_NAME.git master
-    git push git@heroku.com/quiet-journey-76445.git
+    # git push git@heroku.com/quiet-journey-76445.git
+    git push git@heroku.com:quiet-journey-76445.git
